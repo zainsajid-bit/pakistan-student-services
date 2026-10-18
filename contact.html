@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pakistan Student Services</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .navbar .logo span {
+            color: #4263eb !important;
+        }
+
+        .contact-hero {
+            padding: 70px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #eef3ff, #f8faff);
+        }
+
+        .contact-hero h1 {
+            color: #172554;
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+
+        .contact-hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #526078;
+            line-height: 1.8;
+        }
+
+        .contact-section {
+            padding: 60px 8%;
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
+            align-items: start;
+        }
+
+        .contact-info,
+        .contact-form {
+            background: white;
+            border: 1px solid #e5eaf3;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+        }
+
+        .contact-info h2,
+        .contact-form h2 {
+            color: #172554;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info > p {
+            color: #64748b;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            padding: 18px 0;
+            border-bottom: 1px solid #e5eaf3;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-icon {
+            font-size: 25px;
+        }
+
+        .contact-item h3 {
+            color: #1e3a8a;
+            font-size: 17px;
+            margin-bottom: 6px;
+        }
+
+        .contact-item p {
+            color: #64748b;
+            line-height: 1.7;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-item a {
+            color: #4263eb;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form > p {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 22px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #334155;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font: inherit;
+            color: #334155;
+            background: #ffffff;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: 2px solid #c7d2fe;
+            border-color: #4263eb;
+        }
+
+        .form-group textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            width: 100%;
+            border: none;
+            padding: 14px 20px;
+            background: #4263eb;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background: #3154c6;
+        }
+
+        .form-note {
+            margin-top: 14px;
+            font-size: 13px;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .help-section {
+            padding: 50px 8%;
+            background: #f8faff;
+            text-align: center;
+        }
+
+        .help-section h2 {
+            color: #172554;
+            font-size: 30px;
+            margin-bottom: 14px;
+        }
+
+        .help-section p {
+            color: #64748b;
+            line-height: 1.8;
+            margin-bottom: 22px;
+        }
+
+        .help-button {
+            display: inline-block;
+            background: #172554;
+            color: white;
+            padding: 13px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 760px) {
+            .contact-hero h1 {
+                font-size: 32px;
+            }
+
+            .contact-section {
+                padding: 40px 6%;
+            }
+
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 23px;
+            }
+
+            .help-section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            🎓 Pakistan Student <span>Services</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="universities.html">Universities</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="contact-hero">
+        <h1>Contact Pakistan Student Services</h1>
+        <p>
+            Have a question about universities, admissions, courses,
+            or scholarships? Send us your inquiry using the form below.
+            We aim to make educational information easier to access.
+        </p>
+    </section>
+
+    <!-- Contact Information and Form -->
+    <section class="contact-section">
+        <div class="contact-layout">
+
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>
+                    Explore our website for student guidance, or use the
+                    contact options below when you have a question.
+                </p>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>
+                            For general inquiries, please use the contact
+                            form or your institution's official contact details.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🎓</div>
+                    <div>
+                        <h3>Admissions Guidance</h3>
+                        <p>
+                            Find information about admission requirements,
+                            application documents, and deadlines.
+                        </p>
+                        <a href="admissions.html">View Admission Guide →</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">💰</div>
+                    <div>
+                        <h3>Scholarship Information</h3>
+                        <p>
+                            Explore scholarship options and learn about
+                            common eligibility requirements.
+                        </p>
+                        <a href="scholarships.html">Explore Scholarships →</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📚</div>
+                    <div>
+                        <h3>Learning Resources</h3>
+                        <p>
+                            Find online learning platforms and study tips
+                            to support your education.
+                        </p>
+                        <a href="resources.html">View Resources →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send an Inquiry</h2>
+                <p>
+                    Complete the form fields below to prepare your inquiry.
+                </p>
+
+                <form action="#" method="get">
+
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Inquiry Topic</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="admissions">University Admissions</option>
+                            <option value="courses">Courses and Programs</option>
+                            <option value="scholarships">Scholarships</option>
+                            <option value="resources">Study Resources</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write your question here..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Submit Inquiry
+                    </button>
+
+                    <p class="form-note">
+                        Note: This is a front-end demonstration form.
+                        It does not send messages to an email inbox because
+                        a backend or form service has not been connected.
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section class="help-section">
+        <h2>Need More Information?</h2>
+        <p>
+            Browse our frequently asked questions for helpful information
+            about using the website and exploring educational opportunities.
+        </p>
+        <a href="faq.html" class="help-button">
+            Visit Frequently Asked Questions
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Pakistan Student Services. All rights reserved.</p>
+        <p>Helping students explore educational opportunities in Pakistan.</p>
+    </footer>
+
+</body>
+</html>

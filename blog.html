@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Blog | Pakistan Student Services</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .navbar .logo span {
+            color: #4263eb !important;
+        }
+
+        .blog-hero {
+            padding: 75px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #eef3ff, #f8faff);
+        }
+
+        .blog-hero h1 {
+            font-size: 42px;
+            color: #172554;
+            margin-bottom: 18px;
+        }
+
+        .blog-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #526078;
+            line-height: 1.8;
+        }
+
+        .blog-section {
+            padding: 60px 8%;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-heading h2 {
+            color: #172554;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .blog-card {
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid #e5eaf3;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
+        }
+
+        .blog-visual {
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 58px;
+            background: linear-gradient(135deg, #e0eaff, #f1f5ff);
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-category {
+            display: inline-block;
+            padding: 6px 11px;
+            border-radius: 20px;
+            background: #e8efff;
+            color: #3154c6;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .blog-content h3 {
+            color: #1e3a8a;
+            font-size: 21px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .blog-content p {
+            color: #64748b;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .blog-link {
+            color: #4263eb;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .blog-link:hover {
+            text-decoration: underline;
+        }
+
+        .blog-tips {
+            padding: 55px 8%;
+            background: #f8faff;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .tip-card {
+            background: #ffffff;
+            border: 1px solid #e5eaf3;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .tip-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .tip-card p {
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        .blog-cta {
+            margin: 60px 8%;
+            padding: 40px 25px;
+            text-align: center;
+            color: white;
+            background: #172554;
+            border-radius: 18px;
+        }
+
+        .blog-cta h2 {
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+
+        .blog-cta p {
+            color: #dbeafe;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .blog-button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: white;
+            color: #1e40af;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .blog-hero h1 {
+                font-size: 32px;
+            }
+
+            .blog-section,
+            .blog-tips {
+                padding: 40px 6%;
+            }
+
+            .blog-cta {
+                margin: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            🎓 Pakistan Student <span>Services</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="universities.html">Universities</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="blog-hero">
+        <h1>Student Blog & Guidance</h1>
+        <p>
+            Get helpful advice about university admissions, scholarships,
+            exam preparation, and career planning. Explore practical
+            ideas to help you make informed educational decisions.
+        </p>
+    </section>
+
+    <!-- Blog Articles -->
+    <section class="blog-section">
+        <div class="section-heading">
+            <h2>Latest Student Guides</h2>
+            <p>
+                Explore useful topics for every stage of your
+                educational journey.
+            </p>
+        </div>
+
+        <div class="blog-grid">
+
+            <article class="blog-card">
+                <div class="blog-visual">🎓</div>
+                <div class="blog-content">
+                    <span class="blog-category">ADMISSIONS</span>
+                    <h3>How to Prepare for University Admissions</h3>
+                    <p>
+                        Learn how to research universities, check eligibility,
+                        prepare documents, and keep track of application dates.
+                    </p>
+                    <a class="blog-link" href="admissions.html">
+                        Read Admission Guide →
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-visual">💰</div>
+                <div class="blog-content">
+                    <span class="blog-category">SCHOLARSHIPS</span>
+                    <h3>A Student's Guide to Scholarships</h3>
+                    <p>
+                        Understand common scholarship requirements and discover
+                        how to prepare a strong and complete application.
+                    </p>
+                    <a class="blog-link" href="scholarships.html">
+                        Explore Scholarships →
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-visual">📚</div>
+                <div class="blog-content">
+                    <span class="blog-category">STUDY TIPS</span>
+                    <h3>Simple Ways to Improve Exam Preparation</h3>
+                    <p>
+                        Build a study timetable, revise important concepts,
+                        practise questions, and manage your study time.
+                    </p>
+                    <a class="blog-link" href="resources.html">
+                        Explore Study Resources →
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-visual">💻</div>
+                <div class="blog-content">
+                    <span class="blog-category">TECHNOLOGY</span>
+                    <h3>Why Digital Skills Matter for Students</h3>
+                    <p>
+                        Discover how programming, research, and digital
+                        communication skills can support your education.
+                    </p>
+                    <a class="blog-link" href="courses.html">
+                        Explore Courses →
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-visual">🧭</div>
+                <div class="blog-content">
+                    <span class="blog-category">CAREER</span>
+                    <h3>How to Choose the Right Career Path</h3>
+                    <p>
+                        Consider your interests, strengths, education,
+                        and long-term goals when exploring career options.
+                    </p>
+                    <a class="blog-link" href="career.html">
+                        Explore Career Guidance →
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-visual">🏛️</div>
+                <div class="blog-content">
+                    <span class="blog-category">UNIVERSITIES</span>
+                    <h3>What to Consider Before Choosing a University</h3>
+                    <p>
+                        Compare degree programs, admission criteria,
+                        location, facilities, and financial requirements.
+                    </p>
+                    <a class="blog-link" href="universities.html">
+                        Explore Universities →
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Quick Tips -->
+    <section class="blog-tips">
+        <div class="section-heading">
+            <h2>Quick Tips for Students</h2>
+            <p>
+                Small, consistent habits can make a difference
+                in your academic progress.
+            </p>
+        </div>
+
+        <div class="tips-grid">
+
+            <div class="tip-card">
+                <h3>📅 Plan Ahead</h3>
+                <p>
+                    Keep a calendar for exams, assignment deadlines,
+                    and university application dates.
+                </p>
+            </div>
+
+            <div class="tip-card">
+                <h3>🎯 Set Clear Goals</h3>
+                <p>
+                    Break large academic goals into smaller tasks
+                    that you can complete step by step.
+                </p>
+            </div>
+
+            <div class="tip-card">
+                <h3>🔎 Verify Information</h3>
+                <p>
+                    Confirm admission dates, fees, and eligibility
+                    through official university websites.
+                </p>
+            </div>
+
+            <div class="tip-card">
+                <h3>🤝 Ask for Guidance</h3>
+                <p>
+                    Discuss your questions with teachers, academic
+                    advisers, and university admission offices.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="blog-cta">
+        <h2>Your Educational Journey Starts Here</h2>
+        <p>
+            Explore educational resources and find information
+            to help you plan your next step.
+        </p>
+        <a href="resources.html" class="blog-button">
+            Explore Resources
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Pakistan Student Services. All rights reserved.</p>
+        <p>Helping students explore educational opportunities in Pakistan.</p>
+    </footer>
+
+</body>
+</html>

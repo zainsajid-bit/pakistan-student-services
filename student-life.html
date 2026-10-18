@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life | Pakistan Student Services</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .navbar .logo span {
+            color: #4263eb !important;
+        }
+
+        .life-hero {
+            padding: 75px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #eef3ff, #f8faff);
+        }
+
+        .life-hero h1 {
+            color: #172554;
+            font-size: 42px;
+            margin-bottom: 18px;
+        }
+
+        .life-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #526078;
+            line-height: 1.8;
+        }
+
+        .life-section {
+            padding: 60px 8%;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-heading h2 {
+            color: #172554;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        .life-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .life-card {
+            padding: 28px;
+            background: white;
+            border: 1px solid #e5eaf3;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .life-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
+        }
+
+        .life-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+
+        .life-card h3 {
+            color: #1e3a8a;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .life-card p {
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        .balance-section {
+            padding: 60px 8%;
+            background: #f8faff;
+        }
+
+        .balance-layout {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
+            align-items: center;
+        }
+
+        .balance-content h2 {
+            color: #172554;
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        .balance-content p {
+            color: #64748b;
+            line-height: 1.9;
+            margin-bottom: 18px;
+        }
+
+        .balance-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .balance-list li {
+            padding: 12px 0;
+            color: #334155;
+            border-bottom: 1px solid #e2e8f0;
+            line-height: 1.7;
+        }
+
+        .balance-visual {
+            padding: 40px 25px;
+            text-align: center;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #dbeafe, #eef2ff);
+        }
+
+        .balance-visual .big-icon {
+            font-size: 90px;
+            margin-bottom: 18px;
+        }
+
+        .balance-visual h3 {
+            color: #1e3a8a;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .balance-visual p {
+            color: #475569;
+            line-height: 1.8;
+        }
+
+        .life-cta {
+            margin: 60px 8%;
+            padding: 42px 25px;
+            text-align: center;
+            color: white;
+            background: #172554;
+            border-radius: 18px;
+        }
+
+        .life-cta h2 {
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+
+        .life-cta p {
+            color: #dbeafe;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .life-button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: white;
+            color: #1e40af;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        @media (max-width: 700px) {
+            .life-hero h1 {
+                font-size: 32px;
+            }
+
+            .life-section,
+            .balance-section {
+                padding: 40px 6%;
+            }
+
+            .balance-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .life-cta {
+                margin: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            🎓 Pakistan Student <span>Services</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="universities.html">Universities</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="student-life.html">Student Life</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="life-hero">
+        <h1>Explore Student Life</h1>
+        <p>
+            University life is about more than lectures and examinations.
+            It is an opportunity to develop new skills, build friendships,
+            discover interests, and prepare for your future.
+        </p>
+    </section>
+
+    <!-- Student Life Activities -->
+    <section class="life-section">
+        <div class="section-heading">
+            <h2>Make the Most of University Life</h2>
+            <p>
+                Explore activities that can help you grow academically,
+                socially, and personally during your university journey.
+            </p>
+        </div>
+
+        <div class="life-grid">
+
+            <div class="life-card">
+                <div class="life-icon">📖</div>
+                <h3>Academic Learning</h3>
+                <p>
+                    Attend lectures, participate in discussions, work on
+                    assignments, and develop a deeper understanding of
+                    your chosen field.
+                </p>
+            </div>
+
+            <div class="life-card">
+                <div class="life-icon">🤝</div>
+                <h3>Friends & Community</h3>
+                <p>
+                    Build friendships, work with classmates, exchange ideas,
+                    and learn how to collaborate with people from different
+                    backgrounds.
+                </p>
+            </div>
+
+            <div class="life-card">
+                <div class="life-icon">🎭</div>
+                <h3>Clubs & Societies</h3>
+                <p>
+                    Explore student clubs, creative societies, technology
+                    groups, and volunteer activities offered by your campus.
+                </p>
+            </div>
+
+            <div class="life-card">
+                <div class="life-icon">⚽</div>
+                <h3>Sports & Fitness</h3>
+                <p>
+                    Participate in sports, exercise regularly, and make time
+                    for physical activities that support a healthy routine.
+                </p>
+            </div>
+
+            <div class="life-card">
+                <div class="life-icon">💡</div>
+                <h3>Personal Development</h3>
+                <p>
+                    Improve communication, leadership, teamwork, and
+                    problem-solving skills through different experiences.
+                </p>
+            </div>
+
+            <div class="life-card">
+                <div class="life-icon">💼</div>
+                <h3>Career Preparation</h3>
+                <p>
+                    Attend career events, build your CV, explore internships,
+                    and develop practical skills for future employment.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Study-Life Balance -->
+    <section class="balance-section">
+        <div class="balance-layout">
+
+            <div class="balance-content">
+                <h2>Maintain a Healthy Study-Life Balance</h2>
+                <p>
+                    Managing your time can help you meet academic
+                    responsibilities while still making room for rest,
+                    hobbies, and social activities.
+                </p>
+
+                <ul class="balance-list">
+                    <li>✓ Plan your week and prioritize important tasks.</li>
+                    <li>✓ Break assignments into smaller steps.</li>
+                    <li>✓ Take regular breaks while studying.</li>
+                    <li>✓ Make time for sleep, exercise, and hobbies.</li>
+                    <li>✓ Ask teachers or advisers for help when needed.</li>
+                </ul>
+            </div>
+
+            <div class="balance-visual">
+                <div class="big-icon">⚖️</div>
+                <h3>Balance Is Important</h3>
+                <p>
+                    Consistent study habits, personal well-being,
+                    and meaningful activities can help create
+                    a more rewarding university experience.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Student Tips -->
+    <section class="life-section">
+        <div class="section-heading">
+            <h2>Tips for New University Students</h2>
+            <p>
+                A few practical habits can help you feel more confident
+                as you begin university.
+            </p>
+        </div>
+
+        <div class="life-grid">
+
+            <div class="life-card">
+                <div class="life-icon">🗓️</div>
+                <h3>Stay Organized</h3>
+                <p>
+                    Keep track of your class timetable, assignment
+                    deadlines, examinations, and important notices.
+                </p>
+            </div>
+
+            <div class="life-card">
+                <div class="life-icon">🙋</div>
+                <h3>Participate in Class</h3>
+                <p>
+                    Ask questions, share ideas, and communicate with
+                    instructors when you need clarification.
+                </p>
+            </div>
+
+            <div class="life-card">
+                <div class="life-icon">🌱</div>
+                <h3>Keep Learning</h3>
+                <p>
+                    Try new activities, explore learning resources,
+                    and treat challenges as opportunities to improve.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="life-cta">
+        <h2>Plan Your Educational Journey</h2>
+        <p>
+            Explore degree programs and university options
+            to take the next step toward your future.
+        </p>
+        <a href="universities.html" class="life-button">
+            Explore Universities
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Pakistan Student Services. All rights reserved.</p>
+        <p>Helping students explore educational opportunities in Pakistan.</p>
+    </footer>
+
+</body>
+</html>

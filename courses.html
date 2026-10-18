@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses & Programs | Pakistan Student Services</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .navbar .logo span {
+            color: #4263eb !important;
+        }
+
+        .courses-hero {
+            padding: 75px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #eef3ff, #f8faff);
+        }
+
+        .courses-hero h1 {
+            font-size: 42px;
+            color: #172554;
+            margin-bottom: 18px;
+        }
+
+        .courses-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: #526078;
+        }
+
+        .courses-section {
+            padding: 60px 8%;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-heading h2 {
+            font-size: 30px;
+            color: #172554;
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .course-card {
+            background: #ffffff;
+            border: 1px solid #e5eaf3;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
+        }
+
+        .course-icon {
+            font-size: 38px;
+            margin-bottom: 18px;
+        }
+
+        .course-card h3 {
+            color: #1e3a8a;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .course-card p {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        .course-card ul {
+            padding-left: 20px;
+            color: #475569;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+
+        .course-link {
+            display: inline-block;
+            color: #4263eb;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .course-link:hover {
+            text-decoration: underline;
+        }
+
+        .guidance-section {
+            margin: 0 8% 60px;
+            padding: 40px;
+            border-radius: 18px;
+            background: #172554;
+            color: white;
+            text-align: center;
+        }
+
+        .guidance-section h2 {
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .guidance-section p {
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto 24px;
+            color: #dbeafe;
+        }
+
+        .guidance-button {
+            display: inline-block;
+            background: #ffffff;
+            color: #1e40af;
+            padding: 13px 25px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .guidance-button:hover {
+            background: #dbeafe;
+        }
+
+        @media (max-width: 600px) {
+            .courses-hero h1 {
+                font-size: 32px;
+            }
+
+            .courses-section {
+                padding: 40px 6%;
+            }
+
+            .guidance-section {
+                margin: 0 6% 40px;
+                padding: 28px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            🎓 Pakistan Student <span>Services</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="universities.html">Universities</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="courses-hero">
+        <h1>Explore Courses & Programs</h1>
+        <p>
+            Discover different academic fields, explore your interests,
+            and find a program that matches your educational goals.
+            Pakistan Student Services helps students make informed decisions
+            about their future.
+        </p>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <div class="section-heading">
+            <h2>Choose Your Field of Study</h2>
+            <p>
+                Explore popular study fields and learn about the subjects
+                you may study in each program.
+            </p>
+        </div>
+
+        <div class="courses-grid">
+
+            <div class="course-card">
+                <div class="course-icon">💻</div>
+                <h3>Computer Science</h3>
+                <p>
+                    Learn about computing, software development, and
+                    modern digital technologies.
+                </p>
+                <ul>
+                    <li>Programming</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Data Structures</li>
+                </ul>
+                <a href="contact.html" class="course-link">Get Guidance →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">⚙️</div>
+                <h3>Software Engineering</h3>
+                <p>
+                    Understand how software applications are designed,
+                    developed, tested, and maintained.
+                </p>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Software Testing</li>
+                    <li>System Design</li>
+                </ul>
+                <a href="contact.html" class="course-link">Get Guidance →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">📊</div>
+                <h3>Business Administration</h3>
+                <p>
+                    Develop knowledge of business operations, leadership,
+                    management, and entrepreneurship.
+                </p>
+                <ul>
+                    <li>Marketing</li>
+                    <li>Human Resources</li>
+                    <li>Finance</li>
+                </ul>
+                <a href="contact.html" class="course-link">Get Guidance →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🩺</div>
+                <h3>Medical & Health Sciences</h3>
+                <p>
+                    Explore educational pathways related to healthcare,
+                    medical sciences, and patient care.
+                </p>
+                <ul>
+                    <li>Medicine</li>
+                    <li>Nursing</li>
+                    <li>Medical Laboratory Sciences</li>
+                </ul>
+                <a href="contact.html" class="course-link">Get Guidance →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🏗️</div>
+                <h3>Engineering</h3>
+                <p>
+                    Study how scientific and mathematical principles
+                    are used to solve real-world problems.
+                </p>
+                <ul>
+                    <li>Electrical Engineering</li>
+                    <li>Mechanical Engineering</li>
+                    <li>Civil Engineering</li>
+                </ul>
+                <a href="contact.html" class="course-link">Get Guidance →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🎨</div>
+                <h3>Arts & Humanities</h3>
+                <p>
+                    Explore creative thinking, communication, culture,
+                    languages, and human society.
+                </p>
+                <ul>
+                    <li>Media Studies</li>
+                    <li>English Literature</li>
+                    <li>Psychology</li>
+                </ul>
+                <a href="contact.html" class="course-link">Get Guidance →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Student Guidance Section -->
+    <section class="guidance-section">
+        <h2>Not Sure Which Course to Choose?</h2>
+        <p>
+            Choosing a degree is an important decision. Compare your interests,
+            academic background, career goals, and university admission
+            requirements before selecting a program.
+        </p>
+        <a href="universities.html" class="guidance-button">
+            Explore Universities
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            © 2026 Pakistan Student Services.
+            All rights reserved.
+        </p>
+        <p>
+            Helping students explore educational opportunities in Pakistan.
+        </p>
+    </footer>
+
+</body>
+</html>

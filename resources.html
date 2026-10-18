@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resources | Pakistan Student Services</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .navbar .logo span {
+            color: #4263eb !important;
+        }
+
+        .resources-hero {
+            padding: 75px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #eef3ff, #f8faff);
+        }
+
+        .resources-hero h1 {
+            color: #172554;
+            font-size: 42px;
+            margin-bottom: 18px;
+        }
+
+        .resources-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #526078;
+            line-height: 1.8;
+        }
+
+        .resources-section {
+            padding: 60px 8%;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-heading h2 {
+            color: #172554;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .resource-card {
+            padding: 28px;
+            background: white;
+            border: 1px solid #e5eaf3;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
+        }
+
+        .resource-icon {
+            font-size: 38px;
+            margin-bottom: 16px;
+        }
+
+        .resource-card h3 {
+            color: #1e3a8a;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .resource-card p {
+            color: #64748b;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .resource-link {
+            color: #4263eb;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+
+        .tips-section {
+            padding: 55px 8%;
+            background: #f8faff;
+        }
+
+        .tips-list {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .tip-item {
+            display: flex;
+            gap: 18px;
+            padding: 22px;
+            margin-bottom: 16px;
+            background: white;
+            border: 1px solid #e5eaf3;
+            border-radius: 12px;
+        }
+
+        .tip-number {
+            min-width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e8efff;
+            color: #3154c6;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        .tip-item h3 {
+            color: #172554;
+            margin-bottom: 8px;
+        }
+
+        .tip-item p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .resource-cta {
+            margin: 60px 8%;
+            padding: 40px 25px;
+            border-radius: 18px;
+            background: #172554;
+            text-align: center;
+            color: white;
+        }
+
+        .resource-cta h2 {
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+
+        .resource-cta p {
+            color: #dbeafe;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .resource-button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: white;
+            color: #1e40af;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .resources-hero h1 {
+                font-size: 32px;
+            }
+
+            .resources-section,
+            .tips-section {
+                padding: 40px 6%;
+            }
+
+            .tip-item {
+                padding: 16px;
+            }
+
+            .resource-cta {
+                margin: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            🎓 Pakistan Student <span>Services</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="universities.html">Universities</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="resources-hero">
+        <h1>Student Learning Resources</h1>
+        <p>
+            Find helpful learning platforms, study materials, exam preparation
+            advice, and educational tools to support your academic journey.
+            Learn at your own pace and build skills for your future.
+        </p>
+    </section>
+
+    <!-- Online Resources -->
+    <section class="resources-section">
+        <div class="section-heading">
+            <h2>Explore Useful Resources</h2>
+            <p>
+                Discover online platforms that can help you learn,
+                practise, and improve your knowledge.
+            </p>
+        </div>
+
+        <div class="resources-grid">
+
+            <div class="resource-card">
+                <div class="resource-icon">📚</div>
+                <h3>Online Learning</h3>
+                <p>
+                    Explore online courses and educational lessons
+                    in different subjects and skill areas.
+                </p>
+                <a class="resource-link"
+                   href="https://www.khanacademy.org/"
+                   target="_blank" rel="noopener noreferrer">
+                    Visit Khan Academy →
+                </a>
+            </div>
+
+            <div class="resource-card">
+                <div class="resource-icon">💻</div>
+                <h3>Programming Practice</h3>
+                <p>
+                    Practise programming concepts, solve coding problems,
+                    and improve your computer science skills.
+                </p>
+                <a class="resource-link"
+                   href="https://www.w3schools.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    Explore W3Schools →
+                </a>
+            </div>
+
+            <div class="resource-card">
+                <div class="resource-icon">🎓</div>
+                <h3>University Courses</h3>
+                <p>
+                    Discover courses from educational institutions
+                    and learn about subjects across many disciplines.
+                </p>
+                <a class="resource-link"
+                   href="https://www.coursera.org/"
+                   target="_blank" rel="noopener noreferrer">
+                    Explore Coursera →
+                </a>
+            </div>
+
+            <div class="resource-card">
+                <div class="resource-icon">🔬</div>
+                <h3>Research & Knowledge</h3>
+                <p>
+                    Search for academic articles, research papers,
+                    and scholarly information for your assignments.
+                </p>
+                <a class="resource-link"
+                   href="https://scholar.google.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    Open Google Scholar →
+                </a>
+            </div>
+
+            <div class="resource-card">
+                <div class="resource-icon">📝</div>
+                <h3>Study Notes</h3>
+                <p>
+                    Organize your lecture notes, summarize important
+                    topics, and prepare revision material.
+                </p>
+                <a class="resource-link"
+                   href="https://www.notion.so/"
+                   target="_blank" rel="noopener noreferrer">
+                    Explore Notion →
+                </a>
+            </div>
+
+            <div class="resource-card">
+                <div class="resource-icon">🌐</div>
+                <h3>Digital Skills</h3>
+                <p>
+                    Improve your digital skills through tutorials
+                    and beginner-friendly web development lessons.
+                </p>
+                <a class="resource-link"
+                   href="https://developer.mozilla.org/"
+                   target="_blank" rel="noopener noreferrer">
+                    Visit MDN Web Docs →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Study Tips -->
+    <section class="tips-section">
+        <div class="section-heading">
+            <h2>Tips for Academic Success</h2>
+            <p>
+                Simple habits can make studying more organized
+                and help you prepare for examinations.
+            </p>
+        </div>
+
+        <div class="tips-list">
+
+            <div class="tip-item">
+                <div class="tip-number">1</div>
+                <div>
+                    <h3>Create a Study Schedule</h3>
+                    <p>
+                        Divide your subjects into manageable tasks
+                        and set aside regular time for revision.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tip-item">
+                <div class="tip-number">2</div>
+                <div>
+                    <h3>Take Clear Notes</h3>
+                    <p>
+                        Write important definitions, examples,
+                        formulas, and key points in your own words.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tip-item">
+                <div class="tip-number">3</div>
+                <div>
+                    <h3>Practise with Questions</h3>
+                    <p>
+                        Solve practice questions and review your mistakes
+                        to understand difficult topics better.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tip-item">
+                <div class="tip-number">4</div>
+                <div>
+                    <h3>Use Reliable Sources</h3>
+                    <p>
+                        Check information against trusted educational
+                        websites, textbooks, and university materials.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="resource-cta">
+        <h2>Ready to Continue Your Journey?</h2>
+        <p>
+            Explore universities and academic programs to discover
+            educational opportunities that match your interests.
+        </p>
+        <a href="universities.html" class="resource-button">
+            Explore Universities
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Pakistan Student Services. All rights reserved.</p>
+        <p>Supporting students with educational information and resources.</p>
+    </footer>
+
+</body>
+</html>

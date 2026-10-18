@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | Pakistan Student Services</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .navbar .logo span {
+            color: #4263eb !important;
+        }
+
+        .faq-hero {
+            padding: 75px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #eef3ff, #f8faff);
+        }
+
+        .faq-hero h1 {
+            color: #172554;
+            font-size: 42px;
+            margin-bottom: 18px;
+        }
+
+        .faq-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #526078;
+            line-height: 1.8;
+        }
+
+        .faq-section {
+            padding: 60px 8%;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-heading h2 {
+            color: #172554;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .faq-category {
+            margin: 35px 0 18px;
+            color: #1e3a8a;
+            font-size: 23px;
+        }
+
+        .faq-item {
+            margin-bottom: 14px;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #ffffff;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+        }
+
+        .faq-item summary {
+            padding: 20px 22px;
+            color: #172554;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "+";
+            color: #4263eb;
+            font-size: 25px;
+            flex-shrink: 0;
+        }
+
+        .faq-item[open] summary::after {
+            content: "−";
+        }
+
+        .faq-item summary:hover {
+            background: #f8faff;
+        }
+
+        .faq-answer {
+            padding: 0 22px 22px;
+            color: #64748b;
+            line-height: 1.9;
+        }
+
+        .faq-answer a {
+            color: #4263eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-cta {
+            margin: 0 8% 60px;
+            padding: 42px 25px;
+            text-align: center;
+            background: #172554;
+            color: white;
+            border-radius: 18px;
+        }
+
+        .faq-cta h2 {
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+
+        .faq-cta p {
+            color: #dbeafe;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .faq-button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: white;
+            color: #1e40af;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .faq-hero h1 {
+                font-size: 32px;
+            }
+
+            .faq-section {
+                padding: 40px 6%;
+            }
+
+            .faq-item summary {
+                padding: 17px;
+                font-size: 16px;
+            }
+
+            .faq-answer {
+                padding: 0 17px 18px;
+            }
+
+            .faq-cta {
+                margin: 0 6% 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            🎓 Pakistan Student <span>Services</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="universities.html">Universities</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="faq-hero">
+        <h1>Frequently Asked Questions</h1>
+        <p>
+            Find answers to common questions about university admissions,
+            degree programs, scholarships, and educational resources.
+            We have organized useful information to help students get started.
+        </p>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-section">
+        <div class="section-heading">
+            <h2>How Can We Help You?</h2>
+            <p>
+                Select a question to view its answer.
+                Click the question again to close it.
+            </p>
+        </div>
+
+        <div class="faq-container">
+
+            <h3 class="faq-category">🎓 University Admissions</h3>
+
+            <details class="faq-item">
+                <summary>How do I apply for university admission?</summary>
+                <div class="faq-answer">
+                    First, choose a university and degree program. Check its
+                    eligibility criteria, application deadline, fee structure,
+                    and required documents. Then follow the application process
+                    published on the university's official website.
+                    Visit our <a href="admissions.html">Admissions Guide</a>
+                    for more information.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Which documents are usually required for admission?</summary>
+                <div class="faq-answer">
+                    Common documents include academic transcripts or certificates,
+                    an identification document, photographs, and an application
+                    form. Some programs may also require an entry test or other
+                    documents. Requirements vary by institution and program.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How can I check admission deadlines?</summary>
+                <div class="faq-answer">
+                    Check the official university admissions page regularly.
+                    Deadlines can differ by program and admission session, so
+                    always confirm the latest dates directly with the university.
+                </div>
+            </details>
+
+            <h3 class="faq-category">📚 Courses & Programs</h3>
+
+            <details class="faq-item">
+                <summary>How do I choose the right degree program?</summary>
+                <div class="faq-answer">
+                    Consider your interests, academic strengths, career goals,
+                    program content, and future opportunities. Compare different
+                    programs before making your decision.
+                    You can explore options on our
+                    <a href="courses.html">Courses page</a>.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can I compare different universities?</summary>
+                <div class="faq-answer">
+                    Yes. Compare universities based on their recognized programs,
+                    eligibility requirements, tuition fees, location, facilities,
+                    and available student support. Use official sources to
+                    verify information before applying.
+                    Visit our <a href="universities.html">Universities page</a>.
+                </div>
+            </details>
+
+            <h3 class="faq-category">💰 Scholarships & Financial Aid</h3>
+
+            <details class="faq-item">
+                <summary>How can I find scholarships in Pakistan?</summary>
+                <div class="faq-answer">
+                    Explore official government scholarship portals, university
+                    financial aid offices, and recognized scholarship programs.
+                    Check eligibility criteria, application dates, and required
+                    documents. Visit our
+                    <a href="scholarships.html">Scholarships page</a>.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Are scholarships available for students with financial need?</summary>
+                <div class="faq-answer">
+                    Some universities and scholarship programs offer need-based
+                    financial assistance. Eligibility and award amounts vary.
+                    Applicants may need to provide financial information and
+                    academic records according to the program's requirements.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do I need good grades to get a scholarship?</summary>
+                <div class="faq-answer">
+                    Many scholarships have academic requirements, but some also
+                    consider financial need, achievements, or other criteria.
+                    Always read the specific scholarship rules before applying.
+                </div>
+            </details>
+
+            <h3 class="faq-category">💻 Study Resources</h3>
+
+            <details class="faq-item">
+                <summary>Where can I find free online learning resources?</summary>
+                <div class="faq-answer">
+                    You can explore educational websites such as Khan Academy,
+                    W3Schools, and MDN Web Docs. Some platforms offer free
+                    learning materials, while others may charge for selected
+                    courses or certificates. Visit our
+                    <a href="resources.html">Student Resources page</a>.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How can I prepare effectively for exams?</summary>
+                <div class="faq-answer">
+                    Create a realistic timetable, revise regularly, practise
+                    questions, summarize key concepts, and ask for help when
+                    you find a topic difficult. Short, consistent study sessions
+                    can help you stay organized.
+                </div>
+            </details>
+
+            <h3 class="faq-category">🌐 About This Website</h3>
+
+            <details class="faq-item">
+                <summary>Is Pakistan Student Services a university?</summary>
+                <div class="faq-answer">
+                    No. Pakistan Student Services is an educational information
+                    website concept designed to help students explore universities,
+                    courses, scholarships, and learning resources. It does not
+                    replace official university admission offices.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How can I ask another question?</summary>
+                <div class="faq-answer">
+                    Visit our <a href="contact.html">Contact page</a> to view
+                    the inquiry form and available guidance links. The form is
+                    currently a front-end demonstration and does not send
+                    messages until a form service or backend is connected.
+                </div>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="faq-cta">
+        <h2>Still Have Questions?</h2>
+        <p>
+            Explore our educational pages or visit the contact page
+            to find more information about student services.
+        </p>
+        <a href="contact.html" class="faq-button">Visit Contact Page</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Pakistan Student Services. All rights reserved.</p>
+        <p>Helping students explore educational opportunities in Pakistan.</p>
+    </footer>
+
+</body>
+</html>
